@@ -1,0 +1,42 @@
+// These are typography styles
+
+	h1, h2, h3, h4, h5, h6
+	{
+		font-family: $header-font-family;
+		font-weight: $header-font-weight;
+		line-height: $base-line-height;
+		color: $main-color;
+		margin: 0 0 $base-margin 0;
+	}
+
+	p, ol, ul
+	{
+		font-family: $base-font-family;
+		font-size: $base-font-size;
+		line-height: $base-line-height;
+		margin-bottom: $base-margin;
+	}
+
+	p:first-child
+	{
+		margin-top: 0;
+	}
+
+	ul { 
+		list-style: disc;
+		padding-left: $base-padding;
+	}
+
+	strong 
+	{
+		font-weight: $bold-font-weight;
+		font-style: normal;
+	}
+
+	a
+	{
+		color: $link-color;
+		text-decoration: underline;
+		&:hover,
+		&:active { text-decoration: none; color: inherit; }
+	}
