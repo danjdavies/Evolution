@@ -1,1 +1,66 @@
-layout.scss
+		.site-wrapper,
+		.wrapper,
+		.column,
+		.box,
+		.container,
+		article,
+		aside,
+		section {
+			@include box-sizing(border-box);
+		}
+
+// Site Wrapper
+
+		.site-wrapper { }
+
+// Wrapper
+	
+		.wrapper { }
+
+// Box
+
+		.box { }
+
+// Container
+
+		.container { }
+
+// Article
+
+		article { }
+
+// Aside
+
+		aside { }
+
+// Section
+
+		section { }
+
+// Columns
+
+		.column-container { }
+
+		.column-container--two { 
+			
+			.column { 
+				width: 50%;
+				float: left;
+			}
+		}
+
+		.column-container--three { 
+
+			.column { 
+				width: 33.33%;
+				float: left;
+			}
+		}
+
+		.column-container--four { 
+
+			.column { 
+				width: 25%;
+				float: left;
+			}
+		}
