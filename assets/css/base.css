@@ -1,0 +1,153 @@
+/* - Evolution Base Framework
+------------------------------------------------- 
+	Description: Base CSS & HTML Framework inc Sass
+	Author: Dan Davies
+	Author URL: http://www.dan-davies.co.uk
+*/
+.wf-loading {
+  visibility: hidden; }
+
+.wf-active {
+  visibility: visible; }
+
+body {
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 400; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "jaf-facitweb", sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  color: #333333;
+  margin: 0 0 1.5em 0; }
+
+p, ol, ul {
+  font-family: "lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin-bottom: 1.5em; }
+
+p:first-child {
+  margin-top: 0; }
+
+ul {
+  list-style: disc;
+  padding-left: 0.5em; }
+
+ul li {
+  list-style: none; }
+
+ol li {
+  list-style: none; }
+
+strong, b {
+  font-weight: 700;
+  font-style: normal; }
+
+em, i {
+  font-style: italic; }
+
+a {
+  color: #d8544b;
+  cursor: pointer;
+  text-decoration: none; }
+
+a:hover {
+  color: #e2766f; }
+
+a:focus {
+  outline: none; }
+
+a:hover, a:active {
+  outline: 0; }
+
+img, object, embed {
+  height: auto;
+  max-width: 100%; }
+
+blockquote {
+  background: #d8544b;
+  color: white;
+  font-size: 1.1em;
+  font-style: italic;
+  margin: 0 0 1.250em 1.250em;
+  padding: 0.625em 1.250em 1.250em; }
+
+blockquote p:last-child {
+  margin-bottom: 0; }
+
+.site-wrapper,
+.wrapper,
+.column,
+.box,
+.container,
+article,
+aside,
+section {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.site-wrapper {
+  width: 1024px;
+  margin: auto;
+  overflow: hidden; }
+
+.column-container--two .column {
+  width: 50%;
+  float: left; }
+
+.column-container--three .column {
+  width: 33.33%;
+  float: left; }
+
+.column-container--four .column {
+  width: 25%;
+  float: left; }
+
+input,
+textarea {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  font-family: Cambria, Georgia, serif;
+  font-size: 1em;
+  padding: 0.375em 1%;
+  margin: 0;
+  margin-bottom: 1.250em;
+  outline: none;
+  width: 100%;
+  -moz-border-radius: 0.125em;
+  -webkit-border-radius: 0.125em;
+  border-radius: 0.125em; }
+
+input[type=submit] {
+  background: #d8544b;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.438em 0.938em;
+  width: auto; }
+
+input[type=submit]:hover {
+  background: #e2766f; }
+
+input {
+  max-width: 12.500em; }
+
+textarea {
+  max-width: 25.000em; }
+
+.carousel {
+  overflow: hidden;
+  width: 100%; }
+  .carousel .slides {
+    overflow: hidden; }
+  .carousel li {
+    float: left; }
+  .carousel img {
+    width: 100%; }
+
+/*# sourceMappingURL=base.css.map */

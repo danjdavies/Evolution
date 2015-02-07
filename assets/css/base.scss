@@ -71,7 +71,7 @@
 
 		@mixin base-copy {
 			font-size: $base-font-size;
-			line-height :$base-line-height;
+			line-height: $base-line-height;
 			font-weight: $base-font-weight;
 		}
 
@@ -95,8 +95,7 @@
 		.wf-active { visibility: visible; }
 
 		body {
-			color: $main-color;
-			@include $base-copy'
+			@include base-copy;
 		}
 
 // Imported Sass files

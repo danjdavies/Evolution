@@ -42,3 +42,15 @@
 		textarea {
 			max-width: 25.000em;
 		}
+
+// Carousel 
+
+		.carousel {
+			overflow: hidden;
+			width: 100%; 
+
+			.slides { overflow: hidden; }
+
+			li { float: left; }
+			img { width: 100%; }
+		}
