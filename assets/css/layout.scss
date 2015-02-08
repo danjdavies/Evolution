@@ -11,7 +11,7 @@
 
 // Site Wrapper
 
-		.site-wrapper { width: 1024px; margin: auto; overflow: hidden; }
+		.site-wrapper { max-width: 1024px; margin: auto; }
 
 // Wrapper
 	
@@ -35,7 +35,7 @@
 
 // Section
 
-		section { }
+		section { margin-bottom: $base-margin * 6; }
 
 // Columns
 

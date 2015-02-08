@@ -19,8 +19,8 @@
 // Base Units
 
 		$base-line-height 				: 1.5em;
-		$base-margin					: 1.5em;
-		$base-padding					: 0.5em;
+		$base-margin					: 20px;
+		$base-padding					: 20px;
 
 
 // Media Queries
@@ -73,6 +73,7 @@
 			font-size: $base-font-size;
 			line-height: $base-line-height;
 			font-weight: $base-font-weight;
+			font-family: $base-font-family;
 		}
 
 		@mixin image-2x($image, $width, $height) {
