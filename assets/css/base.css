@@ -121,18 +121,53 @@ section {
 section {
   margin-bottom: 120px; }
 
-.column-container--two .column {
-  width: 50%;
-  float: left; }
+.column {
+  display: block;
+  margin: 1% 0 1% 0;
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .column {
+      margin: 1% 0 1% 1.6%;
+      float: left; } }
 
-.column-container--three .column {
-  width: 33.33%;
-  float: left; }
+.column:first-child {
+  margin-left: 0; }
 
-.column-container--four .column {
-  width: 25%;
-  float: left; }
+.column-row {
+  overflow: hidden; }
+  .column-row .column {
+    padding: 20px;
+    background: #e5e5e5; }
 
+@media only screen and (min-width: 768px) {
+  .column-row--two .column {
+    width: 49.2%; } }
+
+@media only screen and (min-width: 768px) {
+  .column-row--three .column {
+    width: 32.26%; } }
+
+@media only screen and (min-width: 768px) {
+  .column-row--four .column {
+    width: 23.8%; } }
+
+@media only screen and (min-width: 768px) {
+  .column-row--five .column {
+    width: 18.72%; } }
+
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+
+/*  GRID COLUMN SETUP   ==================================================================== */
 input,
 textarea {
   background: white;
@@ -176,31 +211,5 @@ textarea {
     float: left; }
   .carousel img {
     width: 100%; }
-
-.column-row {
-  overflow: hidden; }
-  .column-row .column {
-    padding: 20px;
-    background: #e5e5e5; }
-
-.column-row--two .column {
-  width: 48%;
-  float: left;
-  margin: 0 1%; }
-
-.column-row--three .column {
-  width: 31.33%;
-  float: left;
-  margin: 0 1%; }
-
-.column-row--four .column {
-  width: 23%;
-  float: left;
-  margin: 0 1%; }
-
-.column-row--five .column {
-  width: 18%;
-  float: left;
-  margin: 0 1%; }
 
 /*# sourceMappingURL=base.css.map */

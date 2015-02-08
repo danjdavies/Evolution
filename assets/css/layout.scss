@@ -39,28 +39,84 @@
 
 // Columns
 
-		.column-container { }
+		.column {
+			display: block;
+			margin: 1% 0 1% 0;
+			width: 100%;
 
-		.column-container--two { 
+			@media only screen and (min-width: $bp768px) { 
+
+				margin: 1% 0 1% 1.6%;
+				float:left;
+
+			}
+		}
+
+		.column:first-child { margin-left: 0; }
+
+		.column-row {
 			
-			.column { 
-				width: 50%;
-				float: left;
-			}
+			overflow: hidden; 
+
+			.column { padding: $base-padding; background: #e5e5e5;}
 		}
 
-		.column-container--three { 
+		.column-row--two {
 
-			.column { 
-				width: 33.33%;
-				float: left;
+			.column {
+
+				@media only screen and (min-width: $bp768px) { 
+					width: 49.2%;
+				}
 			}
+
 		}
 
-		.column-container--four { 
+		.column-row--three {
 
-			.column { 
-				width: 25%;
-				float: left;
+			.column {
+
+				@media only screen and (min-width: $bp768px) { 
+					width: 32.26%;
+				}
 			}
+
 		}
+
+		.column-row--four {
+
+			.column {
+
+				@media only screen and (min-width: $bp768px) { 
+					width: 23.8%;
+				}
+			}
+
+		}
+
+		.column-row--five {
+
+			.column {
+				
+				@media only screen and (min-width: $bp768px) { 
+					width: 18.72%;
+				}
+			}
+
+		}
+
+		.group:before,
+			.group:after {
+			    content:"";
+			    display:table;
+			}
+			.group:after {
+			    clear:both;
+			}
+			.group {
+			    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+			}
+
+			/*  GRID COLUMN SETUP   ==================================================================== */
+
+			
