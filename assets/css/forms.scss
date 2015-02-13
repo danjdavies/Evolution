@@ -1,0 +1,13 @@
+// Form Styles
+
+		.checkboxes {
+			padding: 0;
+
+			li { list-style: none; }
+
+			.checkboxes__checkbox{
+				input[type="checkbox"] { float: left; }
+			}
+		}
+
+		.radio { margin-right: $base-margin; }

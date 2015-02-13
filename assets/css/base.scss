@@ -1,5 +1,5 @@
 /* - Evolution Base Framework
-------------------------------------------------- 
+-------------------------------------------------
 	Description: Base CSS & HTML Framework inc Sass
 	Author: Dan Davies
 	Author URL: http://www.dan-davies.co.uk
@@ -25,9 +25,9 @@
 
 // Media Queries
 
-		$media : screen;  
-		$feature : min-width; 
-		 
+		$media : screen;
+		$feature : min-width;
+
 		// These are just a starter for ten. By all means, remove or add your own.
 
 		$bp480							: 480px;
@@ -107,3 +107,4 @@
 		@import "footer";
 		@import "layout";
 		@import "components";
+		@import "forms";
