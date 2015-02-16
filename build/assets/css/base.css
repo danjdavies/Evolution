@@ -1,1 +1,183 @@
-.wf-loading{visibility:hidden}.wf-active{visibility:visible}body{font-size:16px;line-height:1.5em;font-weight:400;font-family:lato,sans-serif}h1,h2,h3,h4,h5,h6{font-family:jaf-facitweb,sans-serif;font-weight:700;line-height:1.5em;color:#333;margin:20px 0}h1{font-size:48px}h2{font-size:32px}h3{font-size:16px;margin-bottom:10px}ol,p,ul{font-family:lato,sans-serif;font-size:16px;line-height:1.5em;margin:0 0 20px}p:first-child{margin-top:0}h1+p{font-size:24px;font-weight:700;line-height:1.30435em}p+h2,p+h3,p+p{margin-top:40px}ul{padding-left:20px}ul li{list-style:disc}ol{padding-left:20px}b,strong{font-weight:700;font-style:normal}em,i{font-style:italic}a{color:#d8544b;cursor:pointer;text-decoration:none}a:hover{color:#e2766f}a:active,a:focus,a:hover{outline:0}embed,img,object{height:auto;max-width:100%}blockquote{color:#333;font-size:1.1em;font-style:italic;border-left:4px solid #b3b3b3;padding:20px;margin-left:-25px;font-weight:700}blockquote p:last-child{margin-bottom:0}hr{margin:40px 0}footer{background:red}.box,.column,.container,.site-wrapper,.wrapper,article,aside,section{box-sizing:border-box}.site-wrapper{max-width:1024px;margin:auto}section{margin-bottom:120px}.column{display:block;margin:1% 0;width:100%}@media only screen and (min-width:768px){.column{margin:1% 0 1% 1.6%;float:left}}.column:first-child{margin-left:0}.column-row{overflow:hidden}.column-row .column{padding:20px;background:#e5e5e5}@media only screen and (min-width:768px){.column-row--two .column{width:49.2%}}@media only screen and (min-width:768px){.column-row--three .column{width:32.26%}}@media only screen and (min-width:768px){.column-row--four .column{width:23.8%}}@media only screen and (min-width:768px){.column-row--five .column{width:18.72%}}.group:after,.group:before{content:"";display:table}.group:after{clear:both}.group{zoom:1}.carousel{overflow:hidden;width:100%}.carousel .slides{overflow:hidden}.carousel li{float:left}.carousel img{width:100%}.checkboxes{padding:0}.checkboxes li{list-style:none}.checkboxes .checkboxes__checkbox input[type=checkbox]{float:left}.radio{margin-right:20px}
+/* - Evolution Base Framework
+-------------------------------------------------
+	Description: Base CSS & HTML Framework inc Sass
+	Author: Dan Davies
+	Author URL: http://www.dan-davies.co.uk
+*/
+.wf-loading {
+  visibility: hidden; }
+
+.wf-active {
+  visibility: visible; }
+
+body {
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 400;
+  font-family: "lato", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "jaf-facitweb", sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  color: #333333;
+  margin: 20px 0; }
+
+h1 {
+  font-size: 48px; }
+
+h2 {
+  font-size: 32px; }
+
+h3 {
+  font-size: 16px;
+  margin-bottom: 10px; }
+
+p, ol, ul {
+  font-family: "lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 0 0 20px; }
+
+p:first-child {
+  margin-top: 0; }
+
+h1 + p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.30435em; }
+
+p + h2, p + h3 {
+  margin-top: 40px; }
+
+p + p {
+  margin-top: 40px; }
+
+ul {
+  padding-left: 20px; }
+  ul li {
+    list-style: disc; }
+
+ol {
+  padding-left: 20px; }
+
+strong, b {
+  font-weight: 700;
+  font-style: normal; }
+
+em, i {
+  font-style: italic; }
+
+a {
+  color: #d8544b;
+  cursor: pointer;
+  text-decoration: none; }
+
+a:hover {
+  color: #e2766f; }
+
+a:focus {
+  outline: none; }
+
+a:hover, a:active {
+  outline: 0; }
+
+img, object, embed {
+  height: auto;
+  max-width: 100%; }
+
+blockquote {
+  color: #333333;
+  font-size: 1.1em;
+  font-style: italic;
+  border-left: 4px solid #b3b3b3;
+  padding: 20px;
+  margin-left: -25px;
+  font-weight: 700; }
+
+blockquote p:last-child {
+  margin-bottom: 0; }
+
+hr {
+  margin: 40px 0; }
+
+footer {
+  background: red; }
+
+.site-wrapper, .wrapper, .column, .box, .container, article, aside, section {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.site-wrapper {
+  max-width: 1024px;
+  margin: auto; }
+
+section {
+  margin-bottom: 120px; }
+
+.column {
+  display: block;
+  margin: 1% 0 1% 0;
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .column {
+      margin: 1% 0 1% 1.6%;
+      float: left; } }
+
+.column:first-child {
+  margin-left: 0; }
+
+.column-row {
+  overflow: hidden; }
+  .column-row .column {
+    padding: 20px;
+    background: #e5e5e5; }
+
+@media only screen and (min-width: 768px) {
+  .column-row--two .column {
+    width: 49.2%; } }
+
+@media only screen and (min-width: 768px) {
+  .column-row--three .column {
+    width: 32.26%; } }
+
+@media only screen and (min-width: 768px) {
+  .column-row--four .column {
+    width: 23.8%; } }
+
+@media only screen and (min-width: 768px) {
+  .column-row--five .column {
+    width: 18.72%; } }
+
+.group:before, .group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+.carousel {
+  overflow: hidden;
+  width: 100%; }
+  .carousel .slides {
+    overflow: hidden; }
+  .carousel li {
+    float: left; }
+  .carousel img {
+    width: 100%; }
+
+.checkboxes {
+  padding: 0; }
+  .checkboxes li {
+    list-style: none; }
+  .checkboxes .checkboxes__checkbox input[type="checkbox"] {
+    float: left; }
+
+.radio {
+  margin-right: 20px; }

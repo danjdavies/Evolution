@@ -11,7 +11,7 @@
   visibility: visible; }
 
 body {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5em;
   font-weight: 400;
   font-family: "lato", sans-serif; }
@@ -24,18 +24,18 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px 0; }
 
 h1 {
-  font-size: 48px; }
+  font-size: 60px; }
 
 h2 {
-  font-size: 32px; }
+  font-size: 40px; }
 
 h3 {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 10px; }
 
 p, ol, ul {
   font-family: "lato", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5em;
   margin: 0 0 20px; }
 
@@ -43,7 +43,7 @@ p:first-child {
   margin-top: 0; }
 
 h1 + p {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 1.30435em; }
 

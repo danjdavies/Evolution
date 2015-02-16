@@ -2,11 +2,16 @@
 var gulp = require('gulp');
 var changed = require('gulp-changed');
 var imagemin = require('gulp-imagemin');
+var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var stripDebug = require('gulp-strip-debug');
 var uglify = require('gulp-uglify');
 var autoprefix = require('gulp-autoprefixer');
-var minifyCSS = require('gulp-minify-css');
+
+
+
+/*var minifyCSS = require('gulp-minify-css');
+var ename    = require('gulp-rename'); // to rename any file*/
 
 // include plug-ins
 var jshint = require('gulp-jshint');
@@ -53,20 +58,39 @@ gulp.task('scripts', function() {
 });
 
 // CSS concat, auto-prefix and minify
-gulp.task('styles', function() {
+/*gulp.task('styles', function() {
   gulp.src(['./assets/css/*.css'])
     .pipe(concat('base.css'))
     .pipe(autoprefix('last 2 versions'))
     .pipe(minifyCSS())
     .pipe(gulp.dest('./build/assets/css/'));
+});*/
+
+gulp.task('sass', function () {
+    gulp.src('./assets/css/base.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('./build/assets/css/'));
+});
+
+/*gulp.task('sass', function () {
+    gulp.src('./assets/css/base*.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('css'))
+        .pipe(concat('base.css'))
+        .pipe(gulp.dest('./'))
+        .pipe(minifyCSS())
+        .pipe(rename('base.css'))
+        .pipe(gulp.dest('./build/assets/css/'));
+});
+
+gulp.task('default', ['sass']);*/
+
+// default gulp task
+gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'sass'], function() {
 });
 
 // default gulp task
-gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'styles'], function() {
-});
-
-// default gulp task
-gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'styles'], function() {
+gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'sass'], function() {
   // watch for HTML changes
   gulp.watch('./*.html', function() {
     gulp.run('htmlpage');
@@ -78,7 +102,9 @@ gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'styles'], function() {
   });
 
   // watch for CSS changes
-  gulp.watch('./assets/css/*.css', function() {
-    gulp.run('styles');
+  gulp.watch('./assets/css/*.scss', function() {
+    gulp.run('sass');
   });
 });
+
+
